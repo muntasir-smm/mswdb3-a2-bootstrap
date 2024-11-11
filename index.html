@@ -20,12 +20,12 @@
     <!-- FavIcon -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
-    <style>
+    <!-- <style>
       body {
         background: #333333;
         color: #ffffff;
       }
-    </style>
+    </style> -->
   </head>
 
   <body>
@@ -57,11 +57,9 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto nav-tabs" id="navbarTabs">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home"
-                  >Home</a
-                >
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -494,7 +492,7 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="footerContent">
         <div class="footerLogo">
           <h1 class="footerTitle">FitFreaks</h1>
@@ -531,8 +529,33 @@
       <p class="copyRights">&copy; All rights reserved &#64; FitFreaks 2024</p>
     </footer>
 
-    <!-- Bootstrap -->
+    <!-- JavaScript for Dynamic Tab Activation -->
+    <script>
+      const sections = document.querySelectorAll(".section");
+      const navLinks = document.querySelectorAll(".nav-link");
 
+      window.addEventListener("scroll", () => {
+        let currentSection = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+
+          if (pageYOffset >= sectionTop - sectionHeight / 2) {
+            currentSection = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${currentSection}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
