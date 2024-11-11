@@ -20,20 +20,23 @@
     <!-- FavIcon -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
-    <!-- <style>
+    <style>
       body {
-        background: #333333;
+        background: #6c6c6c;
         color: #ffffff;
       }
-    </style> -->
+      @media screen and (max-width: 767px) {
+        img {
+          width: 50%;
+        }
+      }
+    </style>
   </head>
 
-  <body>
-    <header class="header">
+  <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
+    <header class="header mb-5">
       <!-- Navbar Section -->
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top"
-      >
+      <nav class="navbar navbar-expand-lg bg-danger-subtle fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -92,37 +95,60 @@
       </nav>
 
       <!-- Hero Section -->
-      <section class="heroSection">
-        <div class="heroDescription">
-          <h1 class="heroTitle">
-            Get your body in <span class="pinyonFont">shape</span> & stay
-            healthy
-          </h1>
-          <p class="heroSubTitle">
-            Discover a wealth of health and fitness content, nutritious recipes,
-            and inspiring transformation stories to guide you on your fitness
-            journey!
-          </p>
-          <div class="heroButtons">
-            <button class="btnRed">Join FitFreaks</button>
-            <button class="btnTransparent">Download App</button>
-          </div>
-        </div>
-        <div class="heroImageContainer">
-          <img
-            src="./images/heroImage.png"
-            alt="Fitness Image"
-            class="heroImage"
-          />
-          <div class="heroImageCard1">
-            <h3 class="cardNumber">500+</h3>
-            <p class="cardText">Free Workout Videos</p>
-          </div>
-          <div class="heroImageCard2">
-            <i class="fa-solid fa-circle-play fa-2xl"></i>
-            <div>
-              <h3 class="cardNumber">350+</h3>
-              <p class="cardText">Video Tutorials</p>
+
+      <section class="heroSection bg-black text-white mt-5 pt-5">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <!-- Left Column -->
+            <div class="col-lg-6 col-md-12 text-start">
+              <h1 class="display-4">
+                Get your body in
+                <span
+                  class="text-danger"
+                  style="font-family: 'Pinyon Script', cursive"
+                  >shape</span
+                >
+                & stay healthy
+              </h1>
+              <p class="lead">
+                Discover a wealth of health and fitness content, nutritious
+                recipes, and inspiring transformation stories to guide you on
+                your fitness journey!
+              </p>
+              <div class="mt-4">
+                <button class="btn btn-danger me-2">Join FitFreaks</button>
+                <button class="btn btn-success">Download App</button>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-6 col-md-12 position-relative text-center">
+              <img
+                src="./images/heroImage.png"
+                alt="Fitness Image"
+                class="img-fluid rounded"
+              />
+
+              <!-- Top-Left Badge -->
+              <div
+                class="position-absolute top-0 start-0 bg-warning bg-opacity-75 text-white p-3 rounded shadow m-3"
+              >
+                <h3 class="h5 mb-1">500+</h3>
+                <p class="small mb-0">Free Workout Videos</p>
+              </div>
+
+              <!-- Bottom-Right Badge -->
+              <div
+                class="position-absolute bottom-0 end-0 bg-danger bg-opacity-75 text-white p-3 rounded shadow m-3"
+              >
+                <div class="d-flex align-items-center">
+                  <i class="fa-solid fa-circle-play fa-2xl me-2"></i>
+                  <div>
+                    <h3 class="h5 mb-1">350+</h3>
+                    <p class="small mb-0">Video Tutorials</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -492,7 +518,7 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="footer" id="contact">
+    <footer class="footer" id="about">
       <div class="footerContent">
         <div class="footerLogo">
           <h1 class="footerTitle">FitFreaks</h1>
