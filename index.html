@@ -406,7 +406,7 @@
       </div>
 
       <!-- BMI Calculator Section -->
-      <section class="bmiContainer bg-black text-white py-5">
+      <section class="bmiContainer bg-black text-white my-5">
         <div class="container">
           <!-- BMI Header -->
           <div class="bmiHeader text-center mb-5">
@@ -536,77 +536,88 @@
         </div>
       </section>
 
-      <!-- Workout Calendar Section  -->
-      <section class="workoutCalendar">
-        <h1 class="calendarTitle">Workout Calendar</h1>
-        <p class="calendarSubTitle">
-          Plan your workouts and track your progress with our (interactive)
+      <!-- Workout Calendar Section -->
+      <section class="workoutCalendar bg-dark text-white p-5 rounded-3 my-5">
+        <h1 class="calendarTitle text-center">Workout Calendar</h1>
+        <p class="calendarSubTitle text-center mb-4">
+          Plan your workouts and track your progress with our interactive
           calendar!
         </p>
 
         <div class="calendarContainer">
           <div class="calendarBody">
-            <div class="year-month">
-              <div class="year">2024</div>
-              <div class="month">October</div>
+            <div class="year-month d-grid grid-template-columns-1 mb-4">
+              <div
+                class="year fs-1 fw-bold text-bg-warning py-3 rounded-3 text-center"
+              >
+                2024
+              </div>
+              <div
+                class="month fs-1 fw-bold text-bg-warning py-3 rounded-3 text-center"
+              >
+                October
+              </div>
             </div>
+
             <!-- Days -->
-            <div class="days">
-              <div class="day">Sun</div>
-              <div class="day">Mon</div>
-              <div class="day">Tue</div>
-              <div class="day">Wed</div>
-              <div class="day">Thu</div>
-              <div class="day">Fri</div>
-              <div class="day">Sat</div>
+            <div class="days row text-center g-3">
+              <div class="day col">Sun</div>
+              <div class="day col">Mon</div>
+              <div class="day col">Tue</div>
+              <div class="day col">Wed</div>
+              <div class="day col">Thu</div>
+              <div class="day col">Fri</div>
+              <div class="day col">Sat</div>
             </div>
 
             <!-- Calendar Cells -->
-            <div class="calendarCell"></div>
-            <div class="calendarCell"></div>
-            <div class="calendarCell workoutDay">1</div>
-            <div class="calendarCell workoutDay">2</div>
-            <div class="calendarCell">3</div>
-            <div class="calendarCell">4</div>
-            <div class="calendarCell">5</div>
-            <div class="calendarCell workoutDay">6</div>
-            <div class="calendarCell workoutDay">7</div>
-            <div class="calendarCell">8</div>
-            <div class="calendarCell">9</div>
-            <div class="calendarCell">10</div>
-            <div class="calendarCell">11</div>
-            <div class="calendarCell workoutDay">12</div>
-            <div class="calendarCell">13</div>
-            <div class="calendarCell workoutDay">14</div>
-            <div class="calendarCell">15</div>
-            <div class="calendarCell">16</div>
-            <div class="calendarCell workoutDay">17</div>
-            <div class="calendarCell">18</div>
-            <div class="calendarCell">19</div>
-            <div class="calendarCell workoutDay">20</div>
-            <div class="calendarCell">21</div>
-            <div class="calendarCell">22</div>
-            <div class="calendarCell">23</div>
-            <div class="calendarCell">24</div>
-            <div class="calendarCell">25</div>
-            <div class="calendarCell workoutDay">26</div>
-            <div class="calendarCell">27</div>
-            <div class="calendarCell">28</div>
-            <div class="calendarCell workoutDay">29</div>
-            <div class="calendarCell">30</div>
-            <div class="calendarCell">31</div>
-            <div class="calendarCell"></div>
-            <div class="calendarCell"></div>
+            <div class="calendarCells row g-3">
+              <div class="calendarCell col"></div>
+              <div class="calendarCell col"></div>
+              <div class="calendarCell col workoutDay">1</div>
+              <div class="calendarCell col workoutDay">2</div>
+              <div class="calendarCell col">3</div>
+              <div class="calendarCell col">4</div>
+              <div class="calendarCell col">5</div>
+              <div class="calendarCell col workoutDay">6</div>
+              <div class="calendarCell col workoutDay">7</div>
+              <div class="calendarCell col">8</div>
+              <div class="calendarCell col">9</div>
+              <div class="calendarCell col">10</div>
+              <div class="calendarCell col">11</div>
+              <div class="calendarCell col workoutDay">12</div>
+              <div class="calendarCell col">13</div>
+              <div class="calendarCell col workoutDay">14</div>
+              <div class="calendarCell col">15</div>
+              <div class="calendarCell col">16</div>
+              <div class="calendarCell col workoutDay">17</div>
+              <div class="calendarCell col">18</div>
+              <div class="calendarCell col">19</div>
+              <div class="calendarCell col workoutDay">20</div>
+              <div class="calendarCell col">21</div>
+              <div class="calendarCell col">22</div>
+              <div class="calendarCell col">23</div>
+              <div class="calendarCell col">24</div>
+              <div class="calendarCell col">25</div>
+              <div class="calendarCell col workoutDay">26</div>
+              <div class="calendarCell col">27</div>
+              <div class="calendarCell col">28</div>
+              <div class="calendarCell col workoutDay">29</div>
+              <div class="calendarCell col">30</div>
+              <div class="calendarCell col">31</div>
+              <div class="calendarCell col"></div>
+              <div class="calendarCell col"></div>
+            </div>
           </div>
         </div>
 
-        <div class="calendarLegend">
-          <div class="legendItem">
-            <span class="legendColor" style="background-color: #ff5722"></span>
+        <div class="calendarLegend d-flex justify-content-center mt-4">
+          <div class="legendItem d-flex align-items-center me-4">
+            <span class="legendColor bg-warning"></span>
             <span>Workout Day</span>
           </div>
-          <div class="legendItem">
-            <span class="legendColor" style="background-color: #333"></span>
+          <div class="legendItem d-flex align-items-center">
+            <span class="legendColor bg-secondary"></span>
             <span>Rest Day</span>
           </div>
         </div>
