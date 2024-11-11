@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitFreaks</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="header text-center text-white py-3">
+      <h1 class="navTitle">FitFreaks</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#training">Training</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#calendar">Calendar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="heroSection container d-flex flex-column align-items-center text-center"
+    >
+      <h2 class="heroTitle text-uppercase mb-3">Welcome to FitFreaks</h2>
+      <p class="heroSubTitle">
+        Your ultimate resource for fitness and wellness. Let's reach your goals
+        together!
+      </p>
+      <div class="mt-4">
+        <a href="#training" class="btn btnRed">Get Started</a>
+        <a href="#contact" class="btn btnTransparent">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- Training & Exercises Section -->
+    <section id="training" class="section-container my-5">
+      <h2 class="section-title text-center">Training & Exercises</h2>
+      <div class="trainingImageContainer container">
+        <div class="col-12 col-md-4 p-0" id="image1">
+          <img src="./images/image1.png" alt="Training Image 1" />
+        </div>
+        <div class="col-12 col-md-4 p-0" id="image2">
+          <img src="./images/image2.png" alt="Training Image 2" />
+        </div>
+        <div class="col-12 col-md-4 p-0" id="image3">
+          <img src="./images/image3.png" alt="Training Image 3" />
+        </div>
+        <div class="col-12 col-md-4 p-0" id="image4">
+          <img src="./images/image4.png" alt="Training Image 4" />
+        </div>
+        <div class="col-12 col-md-4 p-0" id="image5">
+          <img src="./images/image5.png" alt="Training Image 5" />
+        </div>
+        <div class="col-12 col-md-4 p-0" id="image6">
+          <img src="./images/image6.png" alt="Training Image 6" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Workout Calendar Section -->
+    <section id="calendar" class="workoutCalendar container my-5">
+      <h2 class="section-title">Workout Calendar</h2>
+      <div class="year-month mb-4">October 2024</div>
+      <div class="calendar-container row">
+        <div class="col-12 col-md-2 calendarCell workoutDay">1</div>
+        <div class="col-12 col-md-2 calendarCell">2</div>
+        <div class="col-12 col-md-2 calendarCell">3</div>
+        <!-- Continue adding days here -->
+      </div>
+    </section>
+
+    <!-- BMI Calculator Section -->
+    <section id="bmi" class="bmiContainer my-5 text-center">
+      <h2 class="section-title">BMI Calculator</h2>
+      <p class="mb-4">Find out your Body Mass Index</p>
+      <table class="bmiTable mx-auto">
+        <tr>
+          <th>Height (m)</th>
+          <th>Weight (kg)</th>
+          <th>BMI</th>
+        </tr>
+        <tr>
+          <td>1.70</td>
+          <td>65</td>
+          <td>22.5</td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </table>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer mt-5">
+      <div class="container text-center">
+        <h3 class="footerTitle">FitFreaks</h3>
+        <p class="copyRights">© 2024 FitFreaks. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
