@@ -22,133 +22,51 @@
   </head>
 
   <body>
-    <!-- Trainings and Exercises -->
-    <section class="trainingContainer py-5 bg-dark text-white mb-5">
-      <div class="container">
-        <h1 class="trainingTitle display-4 mb-4 text-center">
-          Trainings and Exercises
-        </h1>
-        <p class="trainingSubTitle lead mb-5 text-center">
-          We believe fitness should be accessible to everyone, everywhere,
-          regardless of income or access to a gym.
-        </p>
-        <div class="row g-4">
-          <!-- Training Image 1 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100">
-              <div class="card-img-overlay bg-success opacity-50">
-                <img
-                  src="./images/exercise1.jpg"
-                  class="card-img-top"
-                  alt="Exercise 1"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-center text-warning">Exercise 1</h5>
-                <p class="card-text text-center">
-                  Short description of Exercise 1.
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- Workout Calendar Section for November -->
+    <section class="container my-5 p-4 bg-dark text-light rounded">
+      <header class="text-center mb-4">
+        <h1 class="calendarTitle">Workout Calendar</h1>
+      </header>
 
-          <!-- Training Image 2 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100">
-              <div class="card-img-overlay bg-danger opacity-50">
-                <img
-                  src="./images/exercise2.png"
-                  class="card-img-top"
-                  alt="Exercise 2"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-center text-warning">Exercise 2</h5>
-                <p class="card-text text-center">
-                  Short description of Exercise 2.
-                </p>
-              </div>
-            </div>
-          </div>
+      <nav class="d-flex justify-content-center align-items-center mb-3">
+        <button id="prevMonth" class="btn btn-primary mx-2">Previous</button>
+        <div id="currentMonth" class="h4 text-uppercase font-weight-bold"></div>
+        <button id="nextMonth" class="btn btn-primary mx-2">Next</button>
+      </nav>
 
-          <!-- Training Image 3 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100">
-              <div class="card-img-overlay bg-info opacity-50">
-                <img
-                  src="./images/exercise3.png"
-                  class="card-img-top"
-                  alt="Exercise 3"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-center text-warning">Exercise 3</h5>
-                <p class="card-text text-center">
-                  Short description of Exercise 3.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Training Image 4 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100">
-              <div class="card-img-overlay bg-secondary opacity-50">
-                <img
-                  src="./images/exercise4.png"
-                  class="card-img-top"
-                  alt="Exercise 4"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-center text-warning">Exercise 4</h5>
-                <p class="card-text text-center">
-                  Short description of Exercise 4.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Training Image 5 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100">
-              <div class="card-img-overlay bg-success opacity-50">
-                <img
-                  src="./images/exercise5.jpg"
-                  class="card-img-top"
-                  alt="Exercise 5"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-center text-warning">Exercise 5</h5>
-                <p class="card-text text-center">
-                  Short description of Exercise 5.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Training Image 6 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100">
-              <div class="card-img-overlay bg-primary opacity-50">
-                <img
-                  src="./images/exercise6.jpg"
-                  class="card-img-top"
-                  alt="Exercise 6"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-center text-warning">Exercise 6</h5>
-                <p class="card-text text-center">
-                  Short description of Exercise 6.
-                </p>
-              </div>
-            </div>
-          </div>
+      <div class="calendarContainer">
+        <div class="days d-flex text-center font-weight-bold mb-2">
+          <div class="day flex-fill">Sun</div>
+          <div class="day flex-fill">Mon</div>
+          <div class="day flex-fill">Tue</div>
+          <div class="day flex-fill">Wed</div>
+          <div class="day flex-fill">Thu</div>
+          <div class="day flex-fill">Fri</div>
+          <div class="day flex-fill">Sat</div>
         </div>
+        <div id="calendarDays" class="calendarBody d-flex flex-wrap"></div>
       </div>
+
+      <footer class="d-flex justify-content-center mt-3">
+        <div class="legendItem d-flex align-items-center mx-3">
+          <span
+            class="legendColor workoutDay rounded-circle d-inline-block me-2"
+            style="width: 20px; height: 20px; background-color: #ff5722"
+          ></span>
+          <span>Workout Day</span>
+        </div>
+        <div class="legendItem d-flex align-items-center mx-3">
+          <span
+            class="legendColor rounded-circle d-inline-block me-2"
+            style="width: 20px; height: 20px; background-color: #333"
+          ></span>
+          <span>Rest Day</span>
+        </div>
+      </footer>
     </section>
+
+    <!-- Calendar JS -->
+    <script src="./calendar.js"></script>
 
     <!-- Bootstrap JS -->
     <script

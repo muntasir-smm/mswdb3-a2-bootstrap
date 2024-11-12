@@ -536,168 +536,202 @@
         </div>
       </section>
 
-      <!-- Workout Calendar Section -->
-      <section class="workoutCalendar bg-dark text-white p-5 rounded-3 my-5">
-        <h1 class="calendarTitle text-center">Workout Calendar</h1>
-        <p class="calendarSubTitle text-center mb-4">
-          Plan your workouts and track your progress with our interactive
-          calendar!
-        </p>
+      <!-- Workout Calendar Section for November -->
+      <section
+        class="workoutCalendar container my-5 p-4 bg-dark text-light rounded visually-hidden"
+      >
+        <header class="text-center mb-4">
+          <h1 class="calendarTitle">Workout Calendar</h1>
+        </header>
+
+        <nav
+          class="calendarHeader d-flex justify-content-center align-items-center mb-3"
+        >
+          <button id="prevMonth" class="btn btn-primary mx-2">Previous</button>
+          <div
+            id="currentMonth"
+            class="year-month h4 text-uppercase font-weight-bold"
+          ></div>
+          <button id="nextMonth" class="btn btn-primary mx-2">Next</button>
+        </nav>
 
         <div class="calendarContainer">
-          <div class="calendarBody">
-            <div class="year-month d-grid grid-template-columns-1 mb-4">
-              <div
-                class="year fs-1 fw-bold text-bg-warning py-3 rounded-3 text-center"
-              >
-                2024
-              </div>
-              <div
-                class="month fs-1 fw-bold text-bg-warning py-3 rounded-3 text-center"
-              >
-                October
-              </div>
-            </div>
-
-            <!-- Days -->
-            <div class="days row text-center g-3">
-              <div class="day col">Sun</div>
-              <div class="day col">Mon</div>
-              <div class="day col">Tue</div>
-              <div class="day col">Wed</div>
-              <div class="day col">Thu</div>
-              <div class="day col">Fri</div>
-              <div class="day col">Sat</div>
-            </div>
-
-            <!-- Calendar Cells -->
-            <div class="calendarCells row g-3">
-              <div class="calendarCell col"></div>
-              <div class="calendarCell col"></div>
-              <div class="calendarCell col workoutDay">1</div>
-              <div class="calendarCell col workoutDay">2</div>
-              <div class="calendarCell col">3</div>
-              <div class="calendarCell col">4</div>
-              <div class="calendarCell col">5</div>
-              <div class="calendarCell col workoutDay">6</div>
-              <div class="calendarCell col workoutDay">7</div>
-              <div class="calendarCell col">8</div>
-              <div class="calendarCell col">9</div>
-              <div class="calendarCell col">10</div>
-              <div class="calendarCell col">11</div>
-              <div class="calendarCell col workoutDay">12</div>
-              <div class="calendarCell col">13</div>
-              <div class="calendarCell col workoutDay">14</div>
-              <div class="calendarCell col">15</div>
-              <div class="calendarCell col">16</div>
-              <div class="calendarCell col workoutDay">17</div>
-              <div class="calendarCell col">18</div>
-              <div class="calendarCell col">19</div>
-              <div class="calendarCell col workoutDay">20</div>
-              <div class="calendarCell col">21</div>
-              <div class="calendarCell col">22</div>
-              <div class="calendarCell col">23</div>
-              <div class="calendarCell col">24</div>
-              <div class="calendarCell col">25</div>
-              <div class="calendarCell col workoutDay">26</div>
-              <div class="calendarCell col">27</div>
-              <div class="calendarCell col">28</div>
-              <div class="calendarCell col workoutDay">29</div>
-              <div class="calendarCell col">30</div>
-              <div class="calendarCell col">31</div>
-              <div class="calendarCell col"></div>
-              <div class="calendarCell col"></div>
-            </div>
+          <!-- Days of the week header -->
+          <div class="days d-flex text-center font-weight-bold mb-2">
+            <div class="day flex-fill">Sun</div>
+            <div class="day flex-fill">Mon</div>
+            <div class="day flex-fill">Tue</div>
+            <div class="day flex-fill">Wed</div>
+            <div class="day flex-fill">Thu</div>
+            <div class="day flex-fill">Fri</div>
+            <div class="day flex-fill">Sat</div>
           </div>
+
+          <!-- Calendar grid for dates -->
+          <div id="calendarDays" class="calendarBody row row-cols-7 g-2"></div>
         </div>
 
-        <div class="calendarLegend d-flex justify-content-center mt-4">
-          <div class="legendItem d-flex align-items-center me-4">
-            <span class="legendColor bg-warning"></span>
+        <!-- Calendar legend -->
+        <footer class="calendarLegend d-flex justify-content-center mt-3">
+          <div class="legendItem d-flex align-items-center mx-3">
+            <span
+              class="legendColor workoutDay rounded-circle d-inline-block mr-2"
+              style="width: 20px; height: 20px; background-color: #ff5722"
+            ></span>
             <span>Workout Day</span>
           </div>
-          <div class="legendItem d-flex align-items-center">
-            <span class="legendColor bg-secondary"></span>
+          <div class="legendItem d-flex align-items-center mx-3">
+            <span
+              class="legendColor rounded-circle d-inline-block mr-2"
+              style="width: 20px; height: 20px; background-color: #333"
+            ></span>
             <span>Rest Day</span>
           </div>
-        </div>
+        </footer>
       </section>
 
       <!-- Meet Our Team Section -->
-      <section class="teamContainer">
-        <h1 class="teamTitle">Meet Our Team</h1>
-        <p class="teamSubTitle">
-          Our dedicated team of fitness professionals is here to guide you on
-          your journey to health and wellness. Each trainer brings a wealth of
-          experience and expertise to help you achieve your goals.
-        </p>
-        <div class="teamMembers">
-          <div class="teamMember">
-            <img
-              src="./images/trainer1.png"
-              alt="Jerome Bell - Trainer"
-              class="teamMemberImage"
-            />
-            <div class="trainerInfo">
-              <h3 class="memberName">Jerome Bell</h3>
-              <p class="memberJob">Head Trainer</p>
+      <section class="container my-5">
+        <header class="text-center mb-4">
+          <h1>Meet Our Team</h1>
+          <p>
+            Our dedicated team of fitness professionals is here to guide you on
+            your journey to health and wellness. Each trainer brings a wealth of
+            experience and expertise to help you achieve your goals.
+          </p>
+        </header>
+
+        <div class="row">
+          <!-- Team Member 1 -->
+          <article class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="./images/trainer1.png"
+                class="card-img-top team-image"
+                alt="Jerome Bell - Head Trainer"
+                style="object-fit: cover; height: 200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jerome Bell</h5>
+                <p class="card-text">
+                  Head Trainer with over 10 years of experience in fitness and
+                  training.
+                </p>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="btn btn-primary">Connect</a>
+              </footer>
             </div>
-          </div>
-          <div class="teamMember">
-            <img
-              src="./images/trainer2.png"
-              alt="Samantha Smith - Nutritionist"
-              class="teamMemberImage"
-            />
-            <div class="trainerInfo">
-              <h3 class="memberName">Samantha Smith</h3>
-              <p class="memberJob">Nutritionist</p>
+          </article>
+
+          <!-- Team Member 2 -->
+          <article class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="./images/trainer2.png"
+                class="card-img-top team-image"
+                alt="Samantha Smith - Nutritionist"
+                style="object-fit: cover; height: 200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Samantha Smith</h5>
+                <p class="card-text">
+                  Nutritionist specializing in meal planning and dietary
+                  guidelines.
+                </p>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="btn btn-primary">Connect</a>
+              </footer>
             </div>
-          </div>
-          <div class="teamMember">
-            <img
-              src="./images/trainer3.png"
-              alt="David Johnson - Personal Trainer"
-              class="teamMemberImage"
-            />
-            <div class="trainerInfo">
-              <h3 class="memberName">Muntasir Munna</h3>
-              <p class="memberJob">Personal Trainer</p>
+          </article>
+
+          <!-- Team Member 3 -->
+          <article class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="./images/trainer3.png"
+                class="card-img-top team-image"
+                alt="Muntasir Munna - Personal Trainer"
+                style="object-fit: cover; height: 200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Muntasir Munna</h5>
+                <p class="card-text">
+                  Personal Trainer focused on strength and conditioning
+                  training.
+                </p>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="btn btn-primary">Connect</a>
+              </footer>
             </div>
-          </div>
-          <div class="teamMember">
-            <img
-              src="./images/trainer4.png"
-              alt="Emily Davis - Yoga Instructor"
-              class="teamMemberImage"
-            />
-            <div class="trainerInfo">
-              <h3 class="memberName">Emily Davis</h3>
-              <p class="memberJob">Yoga Instructor</p>
+          </article>
+
+          <!-- Team Member 4 -->
+          <article class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="./images/trainer4.png"
+                class="card-img-top team-image"
+                alt="Emily Davis - Yoga Instructor"
+                style="object-fit: cover; height: 200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Emily Davis</h5>
+                <p class="card-text">
+                  Yoga Instructor with a focus on mindfulness and flexibility.
+                </p>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="btn btn-primary">Connect</a>
+              </footer>
             </div>
-          </div>
-          <div class="teamMember">
-            <img
-              src="./images/trainer5.png"
-              alt="Michael Brown - Strength Coach"
-              class="teamMemberImage"
-            />
-            <div class="trainerInfo">
-              <h3 class="memberName">Michael Brown</h3>
-              <p class="memberJob">Strength Coach</p>
+          </article>
+
+          <!-- Team Member 5 -->
+          <article class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="./images/trainer5.png"
+                class="card-img-top team-image"
+                alt="Michael Brown - Strength Coach"
+                style="object-fit: cover; height: 200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Michael Brown</h5>
+                <p class="card-text">
+                  Strength Coach specializing in powerlifting and muscle
+                  building.
+                </p>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="btn btn-primary">Connect</a>
+              </footer>
             </div>
-          </div>
-          <div class="teamMember">
-            <img
-              src="./images/trainer6.png"
-              alt="Sarah Wilson - Pilates Instructor"
-              class="teamMemberImage"
-            />
-            <div class="trainerInfo">
-              <h3 class="memberName">Sarah Wilson</h3>
-              <p class="memberJob">Pilates Instructor</p>
+          </article>
+
+          <!-- Team Member 6 -->
+          <article class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="./images/trainer6.png"
+                class="card-img-top team-image"
+                alt="Sarah Wilson - Pilates Instructor"
+                style="object-fit: cover; height: 200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sarah Wilson</h5>
+                <p class="card-text">
+                  Pilates Instructor with expertise in core strength and
+                  flexibility.
+                </p>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="btn btn-primary">Connect</a>
+              </footer>
             </div>
-          </div>
+          </article>
         </div>
       </section>
     </main>
@@ -739,6 +773,9 @@
 
       <p class="copyRights">&copy; All rights reserved &#64; FitFreaks 2024</p>
     </footer>
+
+    <!-- Calendar JS -->
+    <script src="./calendar.js"></script>
 
     <!-- JavaScript for Dynamic Tab Activation -->
     <script>
