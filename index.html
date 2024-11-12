@@ -393,148 +393,6 @@
         </div>
       </section>
 
-      <!-- Trainings and Exercises -->
-      <div class="visually-hidden">
-        <section class="trainingContainer py-5 bg-dark text-white my-5">
-          <div class="container">
-            <h1 class="trainingTitle display-4 mb-4 text-center">
-              Trainings and Exercises
-            </h1>
-            <p class="trainingSubTitle lead mb-5 text-center">
-              We believe fitness should be accessible to everyone, everywhere,
-              regardless of income or access to a gym.
-            </p>
-            <div class="row g-4">
-              <!-- Training Image 1 -->
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100">
-                  <div class="card-img-overlay bg-success opacity-50">
-                    <img
-                      src="./images/exercise1.jpg"
-                      class="card-img-top"
-                      alt="Exercise 1"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title text-center text-warning">
-                      Exercise 1
-                    </h5>
-                    <p class="card-text text-center">
-                      Short description of Exercise 1.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Training Image 2 -->
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100">
-                  <div class="card-img-overlay bg-danger opacity-50">
-                    <img
-                      src="./images/exercise2.png"
-                      class="card-img-top"
-                      alt="Exercise 2"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title text-center text-warning">
-                      Exercise 2
-                    </h5>
-                    <p class="card-text text-center">
-                      Short description of Exercise 2.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Training Image 3 -->
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100">
-                  <div class="card-img-overlay bg-info opacity-50">
-                    <img
-                      src="./images/exercise3.png"
-                      class="card-img-top"
-                      alt="Exercise 3"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title text-center text-warning">
-                      Exercise 3
-                    </h5>
-                    <p class="card-text text-center">
-                      Short description of Exercise 3.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Training Image 4 -->
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100">
-                  <div class="card-img-overlay bg-secondary opacity-50">
-                    <img
-                      src="./images/exercise4.png"
-                      class="card-img-top"
-                      alt="Exercise 4"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title text-center text-warning">
-                      Exercise 4
-                    </h5>
-                    <p class="card-text text-center">
-                      Short description of Exercise 4.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Training Image 5 -->
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100">
-                  <div class="card-img-overlay bg-success opacity-50">
-                    <img
-                      src="./images/exercise5.jpg"
-                      class="card-img-top"
-                      alt="Exercise 5"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title text-center text-warning">
-                      Exercise 5
-                    </h5>
-                    <p class="card-text text-center">
-                      Short description of Exercise 5.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Training Image 6 -->
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100">
-                  <div class="card-img-overlay bg-primary opacity-50">
-                    <img
-                      src="./images/exercise6.jpg"
-                      class="card-img-top"
-                      alt="Exercise 6"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title text-center text-warning">
-                      Exercise 6
-                    </h5>
-                    <p class="card-text text-center">
-                      Short description of Exercise 6.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-
       <!-- BMI Calculator Section -->
       <section class="bmiContainer bg-black text-white my-5">
         <div class="container">
@@ -590,7 +448,7 @@
                 (BMI).
               </p>
               <form class="calculatorForm g-3">
-                <!-- Row for Height and Weight -->
+                <!-- Row for Height, Weight, Age, and Sex -->
                 <div class="row mb-3 g-3">
                   <div class="col-12 col-md-6">
                     <input
@@ -617,8 +475,8 @@
                   <div class="col-12 col-md-6">
                     <input
                       type="number"
-                      id="height"
-                      name="height"
+                      id="age"
+                      name="age"
                       class="form-control"
                       placeholder="Age"
                       required
@@ -666,58 +524,30 @@
         </div>
       </section>
 
-      <!-- Workout Calendar Section for November -->
-      <section
-        class="workoutCalendar container my-5 p-4 bg-dark text-light rounded visually-hidden"
-      >
-        <header class="text-center mb-4">
-          <h1 class="calendarTitle">Workout Calendar</h1>
-        </header>
-
-        <nav
-          class="calendarHeader d-flex justify-content-center align-items-center mb-3"
-        >
-          <button id="prevMonth" class="btn btn-primary mx-2">Previous</button>
-          <div
-            id="currentMonth"
-            class="year-month h4 text-uppercase font-weight-bold"
-          ></div>
-          <button id="nextMonth" class="btn btn-primary mx-2">Next</button>
-        </nav>
-
-        <div class="calendarContainer">
-          <!-- Days of the week header -->
-          <div class="days d-flex text-center font-weight-bold mb-2">
-            <div class="day flex-fill">Sun</div>
-            <div class="day flex-fill">Mon</div>
-            <div class="day flex-fill">Tue</div>
-            <div class="day flex-fill">Wed</div>
-            <div class="day flex-fill">Thu</div>
-            <div class="day flex-fill">Fri</div>
-            <div class="day flex-fill">Sat</div>
+      <!-- About Section -->
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Left Column: Image -->
+            <div class="col-md-6">
+              <img
+                src="./images/logo.png"
+                class="img-fluid"
+                alt="About Image"
+              />
+            </div>
+            <!-- Right Column: Text -->
+            <div class="col-md-6">
+              <h2>About Us</h2>
+              <p>
+                We are a dedicated team passionate about helping individuals
+                achieve their fitness goals. With a variety of training programs
+                and expert guidance, we ensure a personalized approach to your
+                fitness journey.
+              </p>
+            </div>
           </div>
-
-          <!-- Calendar grid for dates -->
-          <div id="calendarDays" class="calendarBody row row-cols-7 g-2"></div>
         </div>
-
-        <!-- Calendar legend -->
-        <footer class="calendarLegend d-flex justify-content-center mt-3">
-          <div class="legendItem d-flex align-items-center mx-3">
-            <span
-              class="legendColor workoutDay rounded-circle d-inline-block mr-2"
-              style="width: 20px; height: 20px; background-color: #ff5722"
-            ></span>
-            <span>Workout Day</span>
-          </div>
-          <div class="legendItem d-flex align-items-center mx-3">
-            <span
-              class="legendColor rounded-circle d-inline-block mr-2"
-              style="width: 20px; height: 20px; background-color: #333"
-            ></span>
-            <span>Rest Day</span>
-          </div>
-        </footer>
       </section>
 
       <!-- Meet Our Team Section -->
@@ -955,35 +785,6 @@
         </p>
       </div>
     </footer>
-
-    <!-- Calendar JS -->
-    <script src="./calendar.js"></script>
-
-    <!-- JavaScript for Dynamic Tab Activation -->
-    <script>
-      const sections = document.querySelectorAll(".section");
-      const navLinks = document.querySelectorAll(".nav-link");
-
-      window.addEventListener("scroll", () => {
-        let currentSection = "";
-
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-
-          if (pageYOffset >= sectionTop - sectionHeight / 2) {
-            currentSection = section.getAttribute("id");
-          }
-        });
-
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${currentSection}`) {
-            link.classList.add("active");
-          }
-        });
-      });
-    </script>
 
     <!-- Bootstrap JS -->
     <script
